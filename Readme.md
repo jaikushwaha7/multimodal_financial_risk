@@ -16,32 +16,49 @@
 ```
 multimodal_financial_risk/
 │
-├── main.py                      # Entry point: training loop, orchestration
-├── config.py                   # Configs (paths, hyperparams, model sizes)
+├── main.py                      # Main training and orchestration script
+├── config.py                    # Configuration (paths, hyperparams, model names, etc.)
+├── compute_zscore.py            # Altman Z-score calculation and labeling
+├── rule_labeling.py             # Rule-based and price risk labeling
+├── setup.py                     # Python package setup
+├── requirements.txt             # Python dependencies
+├── README.md                    # Project documentation
+├── Readme_Labelling.md          # Labeling dashboard documentation
+├── .gitignore                   # Git ignore rules
 │
 ├── data/
-│   ├── scraper.py              # FinancialDataScraper class
-│   ├── processor.py            # FinancialDataProcessor class
-│   └── image_processor.py      # ImageDataProcessor class
+│   ├── scraper.py               # Financial data scraping (yfinance)
+│   ├── processor.py             # Tabular data simulation and preprocessing
+│   ├── image_processor.py       # Chart image generation and processing
+│   └── __init__.py
+│   └── raw/                     # Scraped CSVs
 │
 ├── text/
-│   └── text_processor.py       # TextDataProcessor class (FinBERT-based)
+│   ├── text_processor.py        # News fetching and embedding (FinBERT, NewsAPI)
+│   └── __init__.py
 │
 ├── models/
-│   ├── encoders.py             # TabularEncoder, TextEncoder, ImageEncoder
-│   ├── attention.py            # CrossModalAttention
-│   ├── multimodal_model.py     # Full MultimodalFinancialModel
+│   ├── encoders.py              # Tabular, text, image encoders
+│   ├── attention.py             # Cross-modal attention
+│   ├── multimodal_model.py      # Full multimodal model
+│   └── __init__.py
 │
 ├── train/
-│   ├── dataset.py              # MultimodalFinancialDataset
-│   └── trainer.py              # MultimodalFinancialTrainer
+│   ├── dataset.py               # Multimodal dataset class
+│   ├── trainer.py               # Training loop and logic
+│   └── __init__.py
 │
 ├── utils/
-│   └── metrics.py              # Accuracy, F1, AUROC (optional)
+│   ├── metrics.py               # Accuracy and metrics functions
+│   ├── create_structure.py      # Script to create folder structure
+│   ├── readme_FolderStructure.md
+│   └── __init__.py
 │
-├── data/raw/                   # Scraped CSVs
-├── charts/                     # Saved images from chart generation
-├── checkpoints/                # Saved model weights
+├── charts/                      # Saved chart images
+├── checkpoints/                 # Saved model weights
+├── images/                      # App screenshots and chart images
+├── wandb/                       # Weights & Biases logs
+├── notebook_testing.ipynb       # Jupyter notebook for testing
 └── README.md
 ```
 
