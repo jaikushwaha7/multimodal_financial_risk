@@ -20,18 +20,6 @@ ENV/
 .vscode/
 
 # Data and model artifacts
-data/raw/
-charts/
-checkpoints/
-wandb/
-*.csv
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
-*.svg
 
 # System files
 .DS_Store

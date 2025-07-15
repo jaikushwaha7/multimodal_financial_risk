@@ -1,0 +1,86 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            hj3bso920ank04c3vcg24qxi4zjubj90:
+                codePath: main.py
+                codePathLocal: main.py
+                cpu_count: 16
+                cpu_count_logical: 32
+                cudaVersion: "12.6"
+                disk:
+                    /:
+                        total: "262142947328"
+                        used: "70765854720"
+                email: jaikushwaha7@gmail.com
+                executable: E:\Study\Interview\AICU\multimodal_financial_risk\.venv\Scripts\python.exe
+                gpu: NVIDIA GeForce RTX 4060 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 3072
+                      memoryTotal: "8585740288"
+                      name: NVIDIA GeForce RTX 4060 Laptop GPU
+                      uuid: GPU-a21988eb-da44-1fb7-93ff-9b17055c2c36
+                host: JaiAlankrita
+                memory:
+                    total: "16308006912"
+                os: Windows-11-10.0.26100-SP0
+                program: E:\Study\Interview\AICU\multimodal_financial_risk\main.py
+                python: CPython 3.12.4
+                root: E:\Study\Interview\AICU\multimodal_financial_risk
+                startedAt: "2025-07-14T17:04:32.625096Z"
+                writerId: hj3bso920ank04c3vcg24qxi4zjubj90
+        m: []
+        python_version: 3.12.4
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 53
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 53
+            "3":
+                - 16
+            "4": 3.12.4
+            "5": 0.21.0
+            "6": 4.53.2
+            "8":
+                - 3
+            "12": 0.21.0
+            "13": windows-amd64
+batch_size:
+    value: 4
+data_path:
+    value: data/raw/financial_statements.csv
+device:
+    value: cpu
+epochs:
+    value: 3
+fusion_type:
+    value: hybrid
+hidden_dim:
+    value: 64
+image_dir:
+    value: charts/
+news_api_key:
+    value: e5939a6d51434a588c194c496dd95c41
+num_classes:
+    value: 3
+sample_tickers:
+    value:
+        - AAPL
+        - TSLA
+        - GOOGL
+        - MSFT
+        - AMZN
+text_model_name:
+    value: ProsusAI/finbert
